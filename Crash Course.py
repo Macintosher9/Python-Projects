@@ -6,3 +6,7 @@ print(f"Hello, {fullname.title()}!\n")
 
 # The \n\t is to indent and add whitspace between each word
 print("To do list:\n\tLaundry\n\tCleaning my room\n\tOthers")
+
+pizzas = ['Meat lover','Pepperoni','Hawaii']
+for pizza in pizzas:
+    print('I really love',pizza)
