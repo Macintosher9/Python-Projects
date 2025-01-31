@@ -1,5 +1,5 @@
 askuser1=input("Would you like you temperature convert to Celsius or Fahreheit? ")
- 
+
 if askuser1=="fahreheit":
     C=int(input("What would you like to convert to fahreheit?\n"))
     F=((C*9/5)+32)
