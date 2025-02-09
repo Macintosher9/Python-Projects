@@ -7,14 +7,20 @@ cardrandomizer = random.randint(1,10)+random.randint(1,10)
 print('Your cards total are:',cardrandomizer)
 
 def dealerturn():
+    global moneypot
     dealerhand = random.randint(1,10)+random.randint(1,10)
     while dealerhand<17:
         dhand2=dealerhand+random.randint(1,10)
         print("Dealer hand currently is",dhand2)
-    if dealerhand >=17:
-        print("Dealer won",moneypot)
-    elif dealerhand>21:
-        print(username,"Won",moneypot)
+        if dhand2==21:
+            print("Dealer won",moneypot)
+            break
+        elif dhand2>=17:
+            print("Dealer won",moneypot)
+            break
+        if dhand2>21:
+            print(username,"won",moneypot*2)
+            break
 
 def gameplay():
     global cardrandomizer
@@ -24,7 +30,7 @@ def gameplay():
         cardrandomizer2=cardrandomizer+random.randint(1,10)
         print(cardrandomizer2)
         gameplay()
-        if cardrandomizer2>21:
+        if cardrandomizer2>=22:
             print('You went over 21, you lost',moneypot)
         elif cardrandomizer2==21:
             print('You won',moneypot*2)
