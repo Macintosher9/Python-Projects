@@ -9,7 +9,7 @@ print('Your cards total are:',cardrandomizer)
 def gameplay():
     global cardrandomizer
     global moneypot
-    asking = input('Would you like to hit, stay\n')
+    asking = input('Would you like to hit, stay?\n')
     if asking=='hit':
         cardrandomizer2=cardrandomizer+random.randint(1,10)
         gameplay()
