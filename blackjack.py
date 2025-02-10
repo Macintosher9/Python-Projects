@@ -18,7 +18,7 @@ def dealerturn():
         elif dhand2>=17:
             print("Dealer won",moneypot)
             break
-        if dhand2>21:
+        elif dhand2>21:
             print(username,"won",moneypot*2)
             break
 
