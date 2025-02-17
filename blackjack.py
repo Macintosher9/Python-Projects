@@ -21,9 +21,6 @@ def dealerturn():
         elif dhand2>=17:
             print("Dealer won",moneypot)
             break
-        elif dhand2>21:
-            print(username,"won",moneypot*2)
-            break
 
 def gameplay():
     global cardrandomizer
@@ -36,5 +33,7 @@ def gameplay():
         elif asking == 'hit':
             card2 = cardrandomizer+random.randint()
             print(card2)
+            if card2 == 21:
+                print(username,"Won",moneypot*2)
 
 gameplay()
