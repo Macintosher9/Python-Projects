@@ -1,4 +1,4 @@
-personAge=20
+personAge=int(input("How old are you?\n"))
 
 if personAge<2:
     print('This person is a baby')
