@@ -1,5 +1,5 @@
 prompt = "If you share your name, we can personalize the messages you see."
-prompt += "\nWhat is your name?"
+prompt += "\nWhat is your name? "
 
 # By adding += to the same variable you can add to the message
 name = input(prompt)
@@ -11,7 +11,7 @@ greeterchoice += "\n3. Greetings,"
 greeterchoice += "\n4. Good morning"
 greeterchoice += "\n5. Good afternoon"
 greeterchoice += "\n6. Evening"
-greeterchoice += "\nEnter number here:"
+greeterchoice += "\nEnter number here: "
 
 greetings = input(greeterchoice)
 if greetings == "1":
