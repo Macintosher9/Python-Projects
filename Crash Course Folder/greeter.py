@@ -1,6 +1,7 @@
 prompt = "If you share your name, we can personalize the messages you see."
 prompt += "\nWhat is your name?"
 
+# By adding += to the same variable you can to the message
 name = input(prompt)
 greeterchoice = """To even more personlize the message you see there are 6
 greeter messages, type from 1 to 6."""
