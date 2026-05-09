@@ -70,5 +70,6 @@ for letters in guessSentence:
     else:
         if userGuess in guessSentence:
             print("You Got It!")
+            guessSentence = guessSentence.index()
         else:
             print("Wrong Guess, Try Again")
