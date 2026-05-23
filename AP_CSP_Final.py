@@ -16,13 +16,14 @@ black = (0,0,0)
 musicFont = pygame.font.SysFont("Avenis", 50)
 musicTxt = musicFont.render("Music", True, (0,0,0))
 musicRect = musicTxt.get_rect(center=(width/2, height/2-50))
-pygame.draw.line(screen, black, (440, 360), (840, 360), 5)
 
 running = True
 while running:
     
     screen.fill(background)
     screen.blit(musicTxt, musicRect)
+    pygame.draw.line(screen, black, (540, 360), (740, 360), 6)
+    pygame.draw.rect(screen, black, ((740, 335), (10, 50)))
     
     for ev in pygame.event.get():
         if ev.type == pygame.QUIT:
