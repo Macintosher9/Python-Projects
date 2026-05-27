@@ -21,6 +21,7 @@ grey = (58,58,58)
 musicFont = pygame.font.SysFont("Avenis", 50)
 musicTxt = musicFont.render("Music", True, (0,0,0))
 musicRect = musicTxt.get_rect(center=(width/2, height/2-50))
+ground = pygame.Rect((0, 540), (1280, 00))
 track = pygame.Rect((540, 360), (200, 10))
 knob = pygame.Rect((540,345), (10, 40))
 track_value = 0.0
@@ -51,6 +52,7 @@ while running:
     screen.blit(musicTxt, musicRect)
     pygame.draw.rect(screen, grey, track)
     pygame.draw.rect(screen, black, knob)
+    pygame.draw.rect(screen, black, ground)
     
     pygame.display.flip()
 pygame.quit()
