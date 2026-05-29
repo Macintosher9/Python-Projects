@@ -18,7 +18,7 @@ background = (196, 196, 196)
 black = (0,0,0)
 grey = (58,58,58)
 
-musicFont = pygame.font.SysFont("Avenis", 50)
+musicFont = pygame.font.Font("roboto\\Roboto-Black.ttf", 50)
 musicTxt = musicFont.render("Music", True, (0,0,0))
 musicRect = musicTxt.get_rect(center=(width/2, height/2-50))
 ground = pygame.Rect((0, 540), (1280, 00))
