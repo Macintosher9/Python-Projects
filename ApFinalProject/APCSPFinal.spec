@@ -5,7 +5,7 @@ a = Analysis(
     ['APCSPFinal.py'],
     pathex=[],
     binaries=[],
-    datas=[],
+    datas=[('roboto', 'roboto')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},

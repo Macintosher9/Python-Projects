@@ -1,5 +1,15 @@
 import pygame
 import sys
+import os
+
+def resource_path(relative_path):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+
+    return os.path.join(base_path, relative_path)
+
 pygame.init()
 
 screenW=1440
@@ -23,10 +33,10 @@ isJump = False
 
 font1 = pygame.font.Font("roboto/Roboto-Regular.ttf", 50)
 font2 = pygame.font.Font("roboto/Roboto-Regular.ttf", 40)
-endGametxt = font1.render("Congrats", True, (0,0,0), (58,58,58))
-startOvertxt = font2.render("Press 'R' to start over", True, (0,0,0), (58,58,58))
+endGametxt = font1.render("Congrats", True, (0,0,0), (72,72,72))
+startOvertxt = font2.render("Press 'R' to start over", True, (0,0,0), (72,72,72))
 endGame = endGametxt.get_rect(center=(screenW/2, screenH/2))
-startOver = startOvertxt.get_rect(center=(screenW/2, screenH/2-50))
+startOver = startOvertxt.get_rect(center=(screenW/2, screenH/2+50))
 
 # Game Platforms
 platforms = [
