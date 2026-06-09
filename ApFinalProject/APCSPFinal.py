@@ -139,6 +139,8 @@ while running:
             playerY = floorY   
             velY = 0           
             isJump = False
+            timer_started = False 
+            time_string = "00:00.00"
 
         if playerX >= screenW - playerW:
             reachedEnd = True
